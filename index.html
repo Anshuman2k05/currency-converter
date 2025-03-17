@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Currency Converter</h1>
+        
+        <div class="form-group">
+            <div class="currency-input">
+                <input type="number" id="amount" placeholder="Amount" />
+                <select id="fromCurrency">
+                    <!-- Currency options will be added dynamically -->
+                </select>
+                <span>to</span>
+                <select id="toCurrency">
+                    <!-- Currency options will be added dynamically -->
+                </select>
+            </div>
+            
+            <button onclick="convertCurrency()">Convert</button>
+        </div>
+
+        <div id="loading" class="loading">Loading...</div>
+
+        <div id="result" class="result">
+            <!-- Conversion result will be displayed here -->
+        </div>
+        
+        <div id="exchangeRateInfo" class="exchange-rate-info">
+            <!-- Exchange rate info will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
